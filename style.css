@@ -1,0 +1,144 @@
+/* Reset & base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fffaf0;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+nav a {
+    color: #fff;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+section.hero {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #ffe4e1;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+section.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+section.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #e5533d;
+}
+
+/* Menu & Items */
+.items, .menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.item, .menu-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    width: calc(50% - 20px);
+    text-align: center;
+}
+
+.item img, .menu-item img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.item h4, .menu-item h4 {
+    margin-bottom: 5px;
+}
+
+.cart-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item button {
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cart-item button:hover {
+    background-color: #e5533d;
+}
+
+/* Forms */
+form input, form select {
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .items, .menu-items {
+        flex-direction: column;
+    }
+
+    .item, .menu-item {
+        width: 100%;
+    }
+}
