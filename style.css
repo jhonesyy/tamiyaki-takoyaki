@@ -7,29 +7,39 @@
 }
 
 body {
-    background-color: #fffaf0;
+    background-color: #fffaf0; /* Light background */
     color: #333;
     line-height: 1.6;
 }
 
+/* --- HEADER/NAV (COLORS KEPT) --- */
 header {
-    background-color: #ff6347;
+    /* BACKGROUND COLOR REVERTED TO ORIGINAL: #ff6347 */
+    background-color: #ff6347; 
     color: #fff;
     padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* Added thick top and bottom lines to match the sketch look */
+    border-top: 3px solid #333; 
+    border-bottom: 3px solid #333;
+    margin-bottom: 20px;
 }
 
 header h1 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
 }
 
 nav a {
-    color: #fff;
-    margin-left: 15px;
+    /* Text color changed to white to contrast with the background */
+    color: #fff; 
+    margin-left: 20px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 0.9rem;
 }
 
 nav a:hover {
@@ -37,108 +47,170 @@ nav a:hover {
 }
 
 main {
-    padding: 20px;
+    padding: 0 20px; /* Adjust padding for better flow */
 }
 
-section.hero {
+/* --- HERO/BANNER (Section 1 - COLORS KEPT) --- */
+.hero-sketch {
     text-align: center;
     padding: 40px 20px;
+    /* BACKGROUND COLOR REVERTED TO ORIGINAL: #ffe4e1 */
     background-color: #ffe4e1;
-    border-radius: 10px;
+    border: 1px solid #333; /* Box outline from sketch */
     margin-bottom: 30px;
 }
 
-section.hero h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-section.hero p {
+.hero-content {
     font-size: 1.2rem;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    /* Simulate the squiggly lines with wavy text or simple lines */
+    padding: 30px 0;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    width: 80%;
+    margin: 20px auto;
 }
 
-.btn {
-    background-color: #ff6347;
+.btn-sketch {
+    /* Style for the 'VIEW MENU' button */
+    display: inline-block;
+    background-color: #ff6347; /* Use original button color */
     color: #fff;
-    padding: 10px 20px;
+    padding: 8px 15px;
     text-decoration: none;
+    border: none; 
     border-radius: 5px;
     font-weight: bold;
     transition: 0.3s;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
-.btn:hover {
+.btn-sketch:hover {
     background-color: #e5533d;
 }
 
-/* Menu & Items */
-.items, .menu-items {
+/* --- PROCESS & INFORMATION (Section 2) --- */
+.process-info-container {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.process-section, .information-section {
+    width: 48%; /* Almost half each */
+    padding: 15px;
+    border: 1px solid #333; /* Box outline from sketch */
+}
+
+.process-section h3 {
+    /* Simulating the rounded 'Process' text box */
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #333;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.information-section h3 {
+    /* Simulating the corner-cut 'Information' box */
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #333;
+    margin-bottom: 15px;
+}
+
+.process-section ol {
+    list-style-type: none; /* Remove default list style */
+    padding-left: 0;
+}
+
+.process-section li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 30px;
+}
+
+/* Custom list numbers to match the circle style in the sketch */
+.process-section li::before {
+    content: attr(value);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 18px;
+    font-size: 0.8rem;
+}
+
+
+/* --- FEATURED ITEMS (Section 3) --- */
+.featured-sketch {
+    display: flex;
+    flex-direction: column;
     gap: 20px;
 }
 
-.item, .menu-item {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
+.featured-item-box {
+    display: flex; 
+    border: 1px solid #333;
     padding: 10px;
-    width: calc(50% - 20px);
+}
+
+.item-content {
+    width: 65%; /* Adjusted width */
+    padding-right: 15px;
+}
+
+.item-skill {
+    width: 35%; /* Adjusted width */
+    border: 1px solid #333; 
     text-align: center;
-}
-
-.item img, .menu-item img {
-    width: 100%;
-    max-width: 200px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-
-.item h4, .menu-item h4 {
-    margin-bottom: 5px;
-}
-
-.cart-item {
     padding: 10px;
-    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.cart-item button {
-    background-color: #ff6347;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    margin-left: 10px;
-    cursor: pointer;
-    border-radius: 5px;
+.item-content h4 {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    font-size: 1.1rem;
 }
 
-.cart-item button:hover {
-    background-color: #e5533d;
+.pic-info {
+    font-size: 0.9rem;
+    color: #333;
 }
 
-/* Forms */
-form input, form select {
-    padding: 8px;
-    margin-bottom: 10px;
-    width: 100%;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+.another-placeholder {
+    border: 1px solid #333;
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
 }
 
-form button {
-    width: 100%;
+/* --- FOOTER --- */
+footer {
+    text-align: center;
+    padding: 15px 20px;
+    border-top: 1px solid #333;
+    margin-top: 30px;
+    font-size: 0.8rem;
+    background-color: #fffaf0;
 }
 
-/* Responsive */
+/* Responsive adjustments */
 @media (max-width: 768px) {
-    .items, .menu-items {
+    .process-info-container {
         flex-direction: column;
     }
 
-    .item, .menu-item {
+    .process-section, .information-section {
         width: 100%;
+        margin-bottom: 20px;
     }
 }
