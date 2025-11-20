@@ -3,40 +3,51 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Edit Profile - Tamiyaki Takoyaki</title>
+<title>Checkout - Tamiyaki Takoyaki</title>
 <link rel="stylesheet" href="style.css">
-<script defer src="script.js"></script>
 </head>
 <body>
+
 <header>
-    <h1>Edit Profile</h1>
+    <h1>Checkout</h1>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="menu.html">Menu</a>
-        <a href="cart.html">Cart</a>
-        <a href="profile.html">Profile</a>
-        <a href="about.html">About</a>
-        <a href="history.html">history</a>
+        <a href="index.html">HOME</a>
+        <a href="menu.html">MENU</a>
+        <a href="cart.html">CART</a>
+        <a href="profile.html">PROFILE</a>
+        <a href="about.html">ABOUT</a>
+        <a href="history.html">HISTORY</a>
     </nav>
 </header>
 
 <main>
-<section class="edit-profile">
-    <h2>Edit Your Info</h2>
-    <form id="editForm">
-        <label>Name:</label>
-        <input type="text" id="edit-name"><br>
-        <label>Email:</label>
-        <input type="email" id="edit-email"><br>
-        <label>Address:</label>
-        <input type="text" id="edit-address"><br><br>
-        <button type="submit">Save Changes</button>
-    </form>
+<section class="checkout">
+    <h2>Your Order Details</h2>
+
+    <label>Order Summary:</label>
+    <textarea placeholder="Enter items and quantities..."></textarea>
+
+    <label>Total Amount:</label>
+    <input type="text" placeholder="₱0">
+
+    <h3>Customer Information</h3>
+    <label>Name:</label>
+    <input type="text">
+
+    <label>Address:</label>
+    <input type="text">
+
+    <label>Phone:</label>
+    <input type="text">
+
+    <br><br>
+    <a class="btn" href="thankyou.html">Place Order</a>
 </section>
 </main>
 
 <footer>
     <p>&copy; 2025 Tamiyaki Takoyaki</p>
 </footer>
+
 </body>
 </html>
