@@ -11,37 +11,47 @@
 <header>
     <h1>Checkout</h1>
     <nav>
-        <a href="index.html">HOME</a>
-        <a href="menu.html">MENU</a>
-        <a href="cart.html">CART</a>
-        <a href="profile.html">PROFILE</a>
-        <a href="about.html">ABOUT</a>
-        <a href="history.html">HISTORY</a>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="cart.html">Cart</a>
+        <a href="profile.html">Profile</a>
+        <a href="about.html">About</a>
+        <a href="history.html">History</a>
     </nav>
 </header>
 
 <main>
 <section class="checkout">
-    <h2>Your Order Details</h2>
 
-    <label>Order Summary:</label>
-    <textarea placeholder="Enter items and quantities..."></textarea>
+    <h2>Your Order</h2>
+    <textarea class="order-input" placeholder="Write your order here..."></textarea>
 
-    <label>Total Amount:</label>
-    <input type="text" placeholder="₱0">
+    <h2>Customer Information</h2>
+    <input type="text" class="text-field" placeholder="Full Name">
+    <input type="text" class="text-field" placeholder="Complete Address">
+    <input type="text" class="text-field" placeholder="Phone Number">
 
-    <h3>Customer Information</h3>
-    <label>Name:</label>
-    <input type="text">
+    <h2>Payment Method</h2>
 
-    <label>Address:</label>
-    <input type="text">
+    <div class="payment-options">
+        <label class="payment-box">
+            <input type="radio" name="payment">
+            <span>Cash on Delivery</span>
+        </label>
 
-    <label>Phone:</label>
-    <input type="text">
+        <label class="payment-box">
+            <input type="radio" name="payment">
+            <span>GCash</span>
+        </label>
 
-    <br><br>
-    <a class="btn" href="thankyou.html">Place Order</a>
+        <label class="payment-box">
+            <input type="radio" name="payment">
+            <span>PayMaya</span>
+        </label>
+    </div>
+
+    <a href="thankyou.html" class="place-order-btn">Place Order</a>
+
 </section>
 </main>
 
