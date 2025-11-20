@@ -3,30 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Profile - Tamiyaki Takoyaki</title>
+<title>Cart - Tamiyaki Takoyaki</title>
 <link rel="stylesheet" href="style.css">
 <script defer src="script.js"></script>
 </head>
 <body>
 <header>
-    <h1>Profile</h1>
+    <h1>Cart</h1>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="menu.html">Menu</a>
-        <a href="cart.html">Cart</a>
-        <a href="profile.html">Profile</a>
-        <a href="about.html">About</a>
-        <a href="history.html">history</a>
+        <a href="index.html">HOME</a>
+        <a href="menu.html">MENU</a>
+        <a href="cart.html"><b style="text-decoration: underline">CART</b></a>
+        <a href="profile.html">PROFILE</a>
+        <a href="about.html">ABOUT</a>
+        <a href="history.html">HISTORY</a>
     </nav>
 </header>
 
 <main>
-<section class="profile">
-    <h2>User Profile</h2>
-    <p><strong>Name:</strong> <span id="profile-name"></span></p>
-    <p><strong>Email:</strong> <span id="profile-email"></span></p>
-    <p><strong>Address:</strong> <span id="profile-address"></span></p>
-    <a class="btn" href="edit.html">Edit Profile</a>
+<section id="cart-container">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <p id="total">Total: ₱0</p>
+    <a class="btn" href="checkout.html">Proceed to Checkout</a>
 </section>
 </main>
 
