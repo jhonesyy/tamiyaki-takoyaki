@@ -9,14 +9,15 @@
 <body>
 
 <header>
-    <h1>TAMIYAKI TAKOYAKI</h1>
+    <div class="header-left">
+        <img src="c:\Users\PC\Downloads\OCTOPUS.png" alt="Logo">
+        <h1>TAMIYAKI TAKOYAKI</h1>
+    </div>
     <nav>
         <a href="index.html">HOME</a>
         <a href="menu.html">MENU</a>
         <a href="cart.html"><b style="text-decoration: underline">CART</b></a>
         <a href="profile.html">PROFILE</a>
-        <a href="about.html">ABOUT</a>
-        <a href="history.html">HISTORY</a>
     </nav>
 </header>
 
@@ -26,10 +27,10 @@
 
     <div class="cart-item">
         <label>Item Name:</label>
-        <input type="text" placeholder="Classic Takoyaki">
+        <input type="" placeholder="Classic Takoyaki">
 
         <label>Price:</label>
-        <input type="text" value="₱50">
+        <input type="text" value="₱65">
 
         <label>Quantity:</label>
         <input type="number" placeholder="0">
@@ -43,7 +44,35 @@
         <input type="text" placeholder="Cheesy Takoyaki">
 
         <label>Price:</label>
-        <input type="text" value="₱60">
+        <input type="text" value="₱75">
+
+        <label>Quantity:</label>
+        <input type="number" placeholder="0">
+
+        <label>Subtotal:</label>
+        <input type="text" placeholder="₱0">
+    </div>  
+
+    <div class="cart-item">
+        <label>Item Name:</label>
+        <input type="text" placeholder="Spicy Takoyaki">
+
+        <label>Price:</label>
+        <input type="text" value="₱75">
+
+        <label>Quantity:</label>
+        <input type="number" placeholder="0">
+
+        <label>Subtotal:</label>
+        <input type="text" placeholder="₱0">
+    </div>
+
+    <div class="cart-item">
+        <label>Item Name:</label>
+        <input type="text" placeholder="Overload Takoyaki">
+
+        <label>Price:</label>
+        <input type="text" value="₱90">
 
         <label>Quantity:</label>
         <input type="number" placeholder="0">
@@ -55,7 +84,13 @@
     <p id="total">Total: <input type="text" placeholder="₱0"></p>
 
     <a class="btn" href="checkout.html">Proceed to Checkout</a>
+    <a class="btn" href="history.html">Order History</a>
 </section>
+
+<div class="product-image-container">
+            <img src="c:\Users\PC\Downloads\cart takoyaki.jpg" alt="cart takoyaki">
+        </div>
+
 </main>
 
 <footer>
